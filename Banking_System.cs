@@ -6,13 +6,13 @@ class Banking_System
     public Banking_System()
     {
         Console.SetWindowSize(100, 25);
-        Console.Title = "GTBPI Banking System[v1.2.0.8]";
+        Console.Title = "Banking System";
         Console.ForegroundColor = ConsoleColor.White;
     }
     private int MainMenu()
     {
         Console.Clear();
-        Center("**** Welcome to GTBPI Banking System ****\n");
+        Center("**** Welcome to Banking System ****\n");
         Console.BackgroundColor = ConsoleColor.DarkBlue;
         DrawLine();
         Console.WriteLine("|{0}|", AlignText(0, ""));
@@ -34,7 +34,7 @@ class Banking_System
     private int LoggedInMenu()
     {
         Console.Clear();
-        Center("**** GTBPI Banking System | Welcome " + User.Title + ". " + User.Name + " ****\n");
+        Center("****  Banking System | Welcome " + User.Title + ". " + User.Name + " ****\n");
         Console.BackgroundColor = ConsoleColor.DarkBlue;
         DrawLine();
         Console.WriteLine("|{0}|", AlignText(0, ""));
@@ -59,7 +59,7 @@ class Banking_System
     private void SignUp()
     {
         Console.Clear();
-        Center("**** GTBPI Banking System | Signup Page ****\n");
+        Center("**** Banking System | Signup Page ****\n");
         DrawLine();
         Console.Write("{0}",AlignText(30,"Your Full Name          : ","L"));
         User.Name = Console.ReadLine();
@@ -88,9 +88,9 @@ class Banking_System
         Console.BackgroundColor = ConsoleColor.DarkBlue;
         DrawLine();
         Console.WriteLine("|{0}|", AlignText(0, ""));
-        Console.WriteLine("|{0}|", AlignText(34, "GTBPI Banking System v1.2.0.8"));
-        Console.WriteLine("|{0}|", AlignText(35, "Developed By Yash Bhardwaj"));
-        Console.WriteLine("|{0}|", AlignText(34, "Computer Engineering[Vth Sem]"));
+        Console.WriteLine("|{0}|", AlignText(34, " Banking System"));
+        Console.WriteLine("|{0}|", AlignText(35, "Developed By Himanshu"));
+        Console.WriteLine("|{0}|", AlignText(34, "Computer Engineering"));
         Console.WriteLine("|{0}|", AlignText(0, ""));
         DrawLine();
         Console.BackgroundColor = ConsoleColor.Black;
@@ -98,7 +98,7 @@ class Banking_System
     private void DepositMoney()
     {
         Console.Clear();
-        Center("**** GTBPI Banking System | Deposit Money ****\n");
+        Center("**** Banking System | Deposit Money ****\n");
         DrawLine();
         Console.Write("{0}",AlignText(30,"Enter amount you want to deposit : ","L"));
         Double DepositAmount = Double.Parse(Console.ReadLine());
@@ -111,7 +111,7 @@ class Banking_System
     private void WithdrawMoney()
     {
         Console.Clear();
-        Center("**** GTBPI Banking System | Withdraw Money ****\n");
+        Center("**** Banking System | Withdraw Money ****\n");
         DrawLine();
         Console.Write("{0}",AlignText(30,"Enter amount you want to withdraw : ","L"));
         Double WithDrawalAmount = Double.Parse(Console.ReadLine());
@@ -138,7 +138,7 @@ class Banking_System
     private void TransferMoney()
     {
         Console.Clear();
-        Center("**** GTBPI Banking System | Transfer Money ****\n");
+        Center("**** Banking System | Transfer Money ****\n");
         DrawLine();
         Console.Write("{0}",AlignText(20,"Enter amount you want to transfer               : ","L"));
         Double TransferAmount = Double.Parse(Console.ReadLine());
@@ -186,7 +186,7 @@ class Banking_System
     private void ShowUserDetails()
     {
         Console.Clear();
-        Center("**** GTBPI Banking System | Account Details ****\n");
+        Center("**** Banking System | Account Details ****\n");
         Console.BackgroundColor = ConsoleColor.DarkBlue;
         DrawLine();
         Console.WriteLine("|{0}|",AlignText(0, ""));
@@ -231,7 +231,7 @@ class Banking_System
     private void Login()
     {
         Console.Clear();
-        Center("**** GTBPI Banking System | Login Page ****\n");
+        Center("**** Banking System | Login Page ****\n");
         DrawLine();
         Console.Write("{0}",AlignText(27,"Enter your account number   :  ","L"));
         User.Account_Number = UInt32.Parse(Console.ReadLine());
@@ -280,7 +280,7 @@ class Banking_System
     private void Passbook()
     {
         Console.Clear();
-        Center("**** GTBPI Banking System | My Passbook ****\n");
+        Center("**** Banking System | My Passbook ****\n");
         Console.BackgroundColor = ConsoleColor.DarkBlue;
         DrawLine();
         Console.WriteLine("|{0}|",AlignText(5,"Transaction Amount    |" + "    Time and Date of Transaction    |" + "    Transaction Description"));
